@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import BitBay from './BitBay-RGB.svg';
-import {URL} from './config';
 
 class Header extends Component {
 

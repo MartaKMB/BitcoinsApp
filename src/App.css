@@ -69,16 +69,22 @@ span {
   padding: 20px;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.clock {
+  color: #FFF;
+  width: 100%;
+  padding-top: 30px;
 }
 
 .link_btn {
   background-color: #FFF;
   min-width: 200px;
   min-height: 40px;
-  margin: 10px;
+  margin: 15px;
   text-decoration: none;
   border-radius: 5px;
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Header';
 import Ticker from './Ticker';
+import Timer from './Timer';
 import Orderbook from './Orderbook';
 import HistoryApp from './HistoryApp'
 import Footer from './Footer';
@@ -22,6 +23,7 @@ class App extends Component {
           <div className="link_container">
             <Link to="/" className="link_btn">Orderbook</Link>
             <Link to="/history" className="link_btn">History</Link>
+            <Timer />
           </div>
           <div className="details_container">
             <Route exact path="/" component={Orderbook}/>
