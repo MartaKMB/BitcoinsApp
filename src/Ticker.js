@@ -18,7 +18,7 @@ class Ticker extends Component {
     }
 
     componentDidMount() {
-        // setInterval(() => this.ticker(), 10000)
+        setInterval(() => this.ticker(), 10000)
     }
 
     componentWillUpdate(nextProps, nextState) {
@@ -53,10 +53,10 @@ class Ticker extends Component {
         return (
         <div className="ticker_container">
             <ul>
-                <li>Maksymalna cena: {data.max} PLN</li>
-                <li>Minimalna cena: {data.min} PLN</li>
-                <li>Ostatnia cena: {data.last} PLN</li>
-                <li>Wolumen: {data.volume} BTC</li>
+                <li>Maksymalna cena: <span>{data.max} PLN</span></li>
+                <li>Minimalna cena: <span>{data.min} PLN</span></li>
+                <li>Ostatnia cena: <span>{data.last} PLN</span></li>
+                <li>Wolumen: <span>{data.volume} BTC</span></li>
             </ul>
         </div>
         );

@@ -4,6 +4,7 @@ import Header from './Header';
 import Ticker from './Ticker';
 import Orderbook from './Orderbook';
 import HistoryApp from './HistoryApp'
+import Footer from './Footer';
 import {
   BrowserRouter as Router,
   Route,
@@ -18,10 +19,15 @@ class App extends Component {
         <div className="container">
           <Header />
           <Ticker />
-          <Link to="/">Orderbook</Link>
-          <Link to="/history">History</Link>
-          <Route exact path="/" component={Orderbook}/>
-          <Route exact path="/history" component={HistoryApp}/>
+          <div className="link_container">
+            <Link to="/" className="link_btn">Orderbook</Link>
+            <Link to="/history" className="link_btn">History</Link>
+          </div>
+          <div className="details_container">
+            <Route exact path="/" component={Orderbook}/>
+            <Route exact path="/history" component={HistoryApp}/>
+          </div>
+          <Footer />
         </div>
       </Router>
       

@@ -11,7 +11,7 @@ class Header extends Component {
                 <img src={BitBay} />
                 <div className="title_container">
                     <h1>informacje giełdowe BTC/PLN</h1>
-                    <h2>aktualizowane co sekundę</h2>
+                    <h2>aktualizowane co 10 sekund</h2>
                 </div>
             </header>
         );

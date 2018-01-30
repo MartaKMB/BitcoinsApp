@@ -18,7 +18,7 @@ class HistoryApp extends Component {
     }
 
     componentDidMount() {
-        // setInterval(() => this.historyFetch(), 10000)
+        setInterval(() => this.historyFetch(), 10000)
     }
 
     componentWillUpdate(nextProps, nextState) {
@@ -53,7 +53,7 @@ class HistoryApp extends Component {
         return (
         <ul>
             {data.map((history, index) =>
-                <li key='index'>data: {new Date(history.date*1000).toLocaleString()}, cena: {history.price}, ilość: {history.amount}</li>
+                <li key='index'>data: {new Date(history.date*1000).toLocaleString()}, <span>cena: {history.price}</span>, ilość: {history.amount}</li>
             )}
         </ul>
         );

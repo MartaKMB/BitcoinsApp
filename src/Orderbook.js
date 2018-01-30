@@ -21,7 +21,7 @@ class Orderbook extends Component {
     }
 
     componentDidMount() {
-        // setInterval(() => this.orderbook(), 10000)
+        setInterval(() => this.orderbook(), 10000)
     }
 
     componentWillUpdate(nextProps, nextState) {
@@ -51,8 +51,8 @@ class Orderbook extends Component {
     printTable(dataArray) {
         return dataArray.map((bid, index) => 
             <tr key={index}>
-                <td>{bid[0]}</td>
-                <td>{bid[1]}</td>
+                <td className="row_data">{bid[0]}</td>
+                <td className="row_data">{bid[1]}</td>
             </tr>
         )
     }
@@ -66,10 +66,9 @@ class Orderbook extends Component {
         }
 
         return (
-        <div>
+        <div className="tables_container">
 
-            <table style={{display: 'inline-block'}}>
-                
+            <table >     
                 <thead>
                     <tr>
                         <th>cena sprzedaży</th>
@@ -82,7 +81,7 @@ class Orderbook extends Component {
                
             </table>
 
-            <table style={{display: 'inline-block'}}>
+            <table>
                 <thead>
                     <tr>
                         <th>cena kupna</th>
