@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Header from './Header';
 import Ticker from './Ticker';
 import Orderbook from './Orderbook';
 import HistoryApp from './HistoryApp'
@@ -14,7 +15,8 @@ class App extends Component {
   render() {
     return (
       <Router> 
-        <div>
+        <div className="container">
+          <Header />
           <Ticker />
           <Link to="/">Orderbook</Link>
           <Link to="/history">History</Link>

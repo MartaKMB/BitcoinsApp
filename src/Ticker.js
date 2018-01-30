@@ -51,7 +51,7 @@ class Ticker extends Component {
         }
 
         return (
-        <div>
+        <div className="ticker_container">
             <ul>
                 <li>Maksymalna cena: {data.max} PLN</li>
                 <li>Minimalna cena: {data.min} PLN</li>
